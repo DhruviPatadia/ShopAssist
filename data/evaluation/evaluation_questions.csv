@@ -1,0 +1,21 @@
+id,question,expected_source,expected_answer,query_type
+1,How long do I have to return an item?,returns_policy.md,30 days,direct
+2,What's the deadline for sending something back?,returns_policy.md,30 days,paraphrased
+3,Can I return a damaged product?,damaged_items.md,Yes,direct
+4,My item arrived damaged. What should I do?,damaged_items.md,Contact support and provide photographs if requested,customer_scenario
+5,How long does standard delivery take?,delivery_policy.md,3–5 working days after dispatch,direct
+6,When should I expect my standard delivery?,delivery_policy.md,3–5 working days after dispatch,paraphrased
+7,Can I cancel my order after it has been dispatched?,cancellation_policy.md,No,direct
+8,Is it possible to cancel an order once it has shipped?,cancellation_policy.md,No,paraphrased
+9,Do you ship internationally?,shipping_policy.md,"Yes, to selected countries",direct
+10,Can you deliver orders outside the country?,shipping_policy.md,"Yes, to selected countries",paraphrased
+11,Can I get a replacement for the wrong item?,replacement_policy.md,Yes,direct
+12,I received the wrong product. Can you send me the correct one?,replacement_policy.md,"Yes, a replacement may be requested",customer_scenario
+13,How long does an approved refund take to appear?,refund_policy.md,5–10 working days,direct
+14,What payment methods do you accept?,payment_policy.md,Major debit and credit cards and other methods displayed at checkout,direct
+15,Can I use more than one discount code?,discount_policy.md,Normally only one promotional discount code,direct
+16,What happens if something is missing from my delivery?,missing_items.md,Contact support and the issue will be investigated,customer_scenario
+17,Is accidental damage covered by the warranty?,warranty_policy.md,Accidental damage may not be covered,direct
+18,Can I get cash instead of a gift card?,gift_cards.md,Gift cards cannot normally be exchanged for cash,direct
+19,What information should I avoid sharing with customer support?,privacy_policy.md,Passwords and full payment card numbers,direct
+20,Can I change my delivery address after the order has been dispatched?,,,out_of_scope
