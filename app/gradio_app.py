@@ -2,7 +2,7 @@ from pathlib import Path
 import sys
 
 import gradio as gr
-from google.colab import userdata
+import os
 
 # Locate the project root
 PROJECT_DIR = Path("/content/drive/MyDrive/ShopAssist")
@@ -25,7 +25,7 @@ def build_app():
 
     embedding_model, faiss_index = build_retrieval_index(documents_df)
 
-    api_key = userdata.get("GEMINI_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY", "").strip()
 
     chatbot = create_chatbot(
         documents_df=documents_df,
