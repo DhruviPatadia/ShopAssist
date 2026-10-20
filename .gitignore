@@ -1,0 +1,30 @@
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+*api_key*
+*secret*
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model and temporary files
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.bin
+*.safetensors
+.cache/
+tmp/
+temp/
