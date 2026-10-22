@@ -28,3 +28,6 @@ env/
 .cache/
 tmp/
 temp/
+
+# Local Gradio configuration
+.gradio/
