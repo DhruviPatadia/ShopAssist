@@ -1,0 +1,65 @@
+question,expected_source,expected_answer,generated_answer,retrieved_source,human_verdict,source_supported,citation_correct,review_notes
+How long do I have to return an item?,returns_policy.md,30 days,"You have 30 days from delivery to return an eligible product. 
+
+Source: returns_policy.md",returns_policy.md,correct,yes,yes,Correct return deadline; verify against returns policy.
+What's the deadline for sending something back?,returns_policy.md,30 days,"You may return eligible products within 30 days of delivery, and replacement requests should also normally be submitted within 30 days of delivery. 
+
+Source: returns_policy.md, replacement_policy.md",returns_policy.md,correct,yes,yes,Correct deadline; additional replacement detail.
+Can I return a damaged product?,damaged_items.md,Yes,"Items that are damaged when received are handled under the damaged-items and replacement policies, rather than the standard returns policy. 
+
+If your item arrived damaged, you should contact support as soon as possible. You may be asked to provide photographs of the damaged product, the packaging, and the shipping label. Please do not dispose of the damaged product or packaging until support has advised you to do so. A damaged item may qualify for a replacement or refund depending on the circumstances, and replacement requests should normally be submitted within 30 days of delivery.
+
+Source: damaged_items.md, returns_policy.md, replacement_policy.md",damaged_items.md,correct,yes,yes,Damaged-item guidance and possible remedies.
+My item arrived damaged. What should I do?,damaged_items.md,Contact support and provide photographs if requested,"If your item arrived damaged, you should contact support as soon as possible. Please do not dispose of the damaged product or packaging until support has advised you to do so. You may be asked to provide photographs of the damaged product, the packaging, and the shipping label. 
+
+Source: damaged_items.md",damaged_items.md,correct,yes,yes,Contact support and photo guidance.
+How long does standard delivery take?,delivery_policy.md,3–5 working days after dispatch,"Standard domestic delivery takes 3–5 working days after the order has been dispatched. (Orders are normally processed within 1–2 working days before dispatch.)
+
+Source: delivery_policy.md",delivery_policy.md,correct,yes,yes,Correct delivery estimate after dispatch.
+When should I expect my standard delivery?,delivery_policy.md,3–5 working days after dispatch,"Standard domestic delivery takes 3–5 working days after the order has been dispatched. Please note that orders are normally processed within 1–2 working days before dispatch.
+
+Source: delivery_policy.md",delivery_policy.md,correct,yes,yes,Correct estimate; processing time is distinguished.
+Can I cancel my order after it has been dispatched?,cancellation_policy.md,No,"Once an order has been dispatched, it cannot normally be cancelled. However, you may use the returns process after delivery if the product is eligible for return.
+
+Source: cancellation_policy.md",cancellation_policy.md,correct,yes,yes,Cancellation normally unavailable after dispatch.
+Is it possible to cancel an order once it has shipped?,cancellation_policy.md,No,"Once an order has been dispatched, it cannot normally be cancelled. However, you may use the returns process after delivery if the product is eligible for return.
+
+Source: cancellation_policy.md",cancellation_policy.md,correct,yes,yes,Consistent with the cancellation policy.
+Do you ship internationally?,shipping_policy.md,"Yes, to selected countries","Yes, we offer international shipping to selected countries. 
+
+Source: shipping_policy.md",international_shipping.md,correct,yes,yes,Verified: international_shipping.md explicitly confirms shipping to selected countries.
+Can you deliver orders outside the country?,shipping_policy.md,"Yes, to selected countries","Yes, we offer international shipping to selected countries. Available shipping methods and costs are calculated and displayed during checkout. 
+
+Sources: international_shipping.md, shipping_policy.md",international_shipping.md,correct,yes,yes,International shipping answer; verify both cited policies.
+Can I get a replacement for the wrong item?,replacement_policy.md,Yes,"Yes, you may request a replacement if you receive the wrong product. Replacement requests should normally be submitted within 30 days of delivery, and you may be asked to provide photographs or other information to verify the incorrect item. 
+
+Source: replacement_policy.md",replacement_policy.md,correct,yes,yes,Correct replacement guidance for wrong item.
+I received the wrong product. Can you send me the correct one?,replacement_policy.md,"Yes, a replacement may be requested","Yes, you may request a replacement if you received the wrong product. Replacement requests should normally be submitted within 30 days of delivery. Please note that you may be asked to provide photographs or other information to verify the incorrect item, and if the correct product is unavailable, you may be offered a refund instead.
+
+Source: replacement_policy.md",replacement_policy.md,correct,yes,yes,Correct replacement guidance and refund alternative.
+How long does an approved refund take to appear?,refund_policy.md,5–10 working days,"Once a refund is approved and issued, customers should allow 5–10 working days for it to appear in their account, depending on the payment provider. 
+
+Source: refund_policy.md",refund_policy.md,correct,yes,yes,Correct refund estimate; verify policy wording.
+What payment methods do you accept?,payment_policy.md,Major debit and credit cards and other methods displayed at checkout,"Hello! We accept major debit and credit cards, as well as other payment methods displayed during checkout. 
+
+Source: payment_policy.md",payment_policy.md,correct,yes,yes,Matches expected payment methods.
+Can I use more than one discount code?,discount_policy.md,Normally only one promotional discount code,"Only one promotional discount code can normally be applied to an order unless the promotion specifically states otherwise.
+
+Source: discount_policy.md",discount_policy.md,correct,yes,yes,Correct discount-code rule and exception.
+What happens if something is missing from my delivery?,missing_items.md,Contact support and the issue will be investigated,"If an expected item is missing from your delivery, you should first check your order confirmation and delivery information to see if your order was split into multiple shipments. 
+
+If the item was included in your order but is missing from the delivered package, please contact support so we can investigate the issue. Depending on the investigation, the missing item may be replaced or refunded. You may also be asked to provide photographs of the received package and its contents.
+
+Source: missing_items.md",missing_items.md,correct,yes,yes,Appropriate investigation steps for missing items.
+Is accidental damage covered by the warranty?,warranty_policy.md,Accidental damage may not be covered,"Accidental damage may not be covered by the warranty, as normal wear and tear, accidental damage, misuse, and unauthorized modifications may not be covered. Warranty coverage depends on the product, manufacturer, purchase date, and nature of the issue.
+
+Source: warranty_policy.md",warranty_policy.md,correct,yes,yes,Matches warranty qualification.
+Can I get cash instead of a gift card?,gift_cards.md,Gift cards cannot normally be exchanged for cash,"Gift cards cannot normally be exchanged for cash.
+
+Source: gift_cards.md",gift_cards.md,correct,yes,yes,Correct gift-card cash-exchange rule.
+What information should I avoid sharing with customer support?,privacy_policy.md,Passwords and full payment card numbers,"You should avoid sharing passwords, full payment card numbers, or other sensitive authentication information with customer support.
+
+Source: privacy_policy.md",privacy_policy.md,correct,yes,yes,Correct privacy guidance.
+Can I change my delivery address after the order has been dispatched?,,,"I am sorry, but the provided policies do not contain information on whether you can change your delivery address after an order has been dispatched. 
+
+Source: delivery_policy.md / cancellation_policy.md / damaged_items.md",delivery_policy.md,correct,uncertain,not_applicable,"The chatbot appropriately acknowledges missing information. The available policies do not specify whether an address can be changed after dispatch, so source support is uncertain."

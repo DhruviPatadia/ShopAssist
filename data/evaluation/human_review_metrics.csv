@@ -1,0 +1,10 @@
+metric,value,unit
+Questions reviewed,20.0,Count
+Labelled correct,20.0,Count
+Preliminary answer correctness,100.0,%
+Source supported,19.0,Count
+Source unsupported,0.0,Count
+Source uncertain,1.0,Count
+Citation correct,19.0,Count
+Applicable citations,19.0,Count
+Citation accuracy,100.0,%
