@@ -1,3 +1,14 @@
+---
+title: ShopAssist AI
+emoji: 🛍️
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+sdk_version: 5.49.1
+app_file: app.py
+pinned: false
+---
+
 # ShopAssist AI — Intelligent E-commerce Customer Support Agent
 
 ShopAssist AI is a retrieval-augmented customer support chatbot designed to answer common e-commerce questions using a collection of policy documents. It combines semantic search, vector retrieval, a large language model, and a Gradio chat interface to provide answers grounded in relevant policies.
