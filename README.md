@@ -109,6 +109,40 @@ These figures describe the earlier retrieval evaluation recorded during developm
 
 The project also includes `data/evaluation/rag_evaluation_results.csv` for reviewing previously recorded answer-generation evaluation results.
 
+## Human-Reviewed Answer Evaluation
+
+ShopAssist AI was evaluated using a benchmark of 20 customer questions covering returns, delivery, cancellations, international shipping, replacements, refunds, payments, discounts, missing items, warranties, gift cards, privacy, and an out-of-scope address-change question.
+
+The benchmark compares generated responses with expected answers and relevant policy documents. Responses were reviewed using three criteria: answer correctness, policy-source support, and citation correctness.
+
+### Preliminary Results
+
+| Metric | Result |
+|---|---:|
+| Questions reviewed | 20 |
+| Answers labelled correct | 20/20 (100%) |
+| Answers marked as source-supported | 19/20 (95%) |
+| Answers with uncertain source support | 1/20 (5%) |
+| Citation accuracy among applicable labels | 19/19 (100%) |
+
+**Interpretation:** These are preliminary, human-reviewed results based on the current benchmark labels. They should not be interpreted as independently validated model accuracy or as evidence of performance across all possible customer queries.
+
+One question asked whether a delivery address could be changed after dispatch. The available policies did not specify whether this was possible, and the chatbot acknowledged the information gap rather than asserting an unsupported policy.
+
+Citation accuracy excludes that question because its citation label was marked `not_applicable`. The international-shipping source was also reviewed against the policy documents, which confirm shipping to selected countries.
+
+### Evaluation Files
+
+The evaluation artifacts are stored in `data/evaluation/`:
+
+- `evaluation_questions.csv` — benchmark questions, expected answers, and expected sources.
+- `rag_evaluation_results.csv` — recorded retrieval and generated-answer results.
+- `improved_evaluation_report.csv` — additional retrieval and phrase-check indicators.
+- `human_review_benchmark.csv` — human-review labels and notes.
+- `human_review_metrics.csv` — summary of the preliminary human-review metrics.
+
+The benchmark is small and reflects a limited set of policy questions. Further evaluation should include more paraphrases, ambiguous queries, unsupported questions, and independent review of answer claims and citations.
+
 ## Automated Tests
 
 The retrieval test suite is located at `tests/test_retrieval.py`.
