@@ -1,0 +1,5 @@
+faiss-cpu
+numpy
+pandas
+google-genai
+gradio
