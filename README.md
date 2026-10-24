@@ -1,14 +1,3 @@
----
-title: ShopAssist AI
-emoji: 🛍️
-colorFrom: blue
-colorTo: indigo
-sdk: gradio
-sdk_version: 5.49.1
-app_file: app.py
-pinned: false
----
-
 # ShopAssist AI — Intelligent E-commerce Customer Support Agent
 
 ShopAssist AI is a retrieval-augmented customer support chatbot designed to answer common e-commerce questions using a collection of policy documents. It combines semantic search, vector retrieval, a large language model, and a Gradio chat interface to provide answers grounded in relevant policies.
@@ -119,40 +108,6 @@ The initial retrieval evaluation used a set of customer questions with expected 
 These figures describe the earlier retrieval evaluation recorded during development. They are retrieval metrics, not measurements of overall answer correctness or customer satisfaction.
 
 The project also includes `data/evaluation/rag_evaluation_results.csv` for reviewing previously recorded answer-generation evaluation results.
-
-## Human-Reviewed Answer Evaluation
-
-ShopAssist AI was evaluated using a benchmark of 20 customer questions covering returns, delivery, cancellations, international shipping, replacements, refunds, payments, discounts, missing items, warranties, gift cards, privacy, and an out-of-scope address-change question.
-
-The benchmark compares generated responses with expected answers and relevant policy documents. Responses were reviewed using three criteria: answer correctness, policy-source support, and citation correctness.
-
-### Preliminary Results
-
-| Metric | Result |
-|---|---:|
-| Questions reviewed | 20 |
-| Answers labelled correct | 20/20 (100%) |
-| Answers marked as source-supported | 19/20 (95%) |
-| Answers with uncertain source support | 1/20 (5%) |
-| Citation accuracy among applicable labels | 19/19 (100%) |
-
-**Interpretation:** These are preliminary, human-reviewed results based on the current benchmark labels. They should not be interpreted as independently validated model accuracy or as evidence of performance across all possible customer queries.
-
-One question asked whether a delivery address could be changed after dispatch. The available policies did not specify whether this was possible, and the chatbot acknowledged the information gap rather than asserting an unsupported policy.
-
-Citation accuracy excludes that question because its citation label was marked `not_applicable`. The international-shipping source was also reviewed against the policy documents, which confirm shipping to selected countries.
-
-### Evaluation Files
-
-The evaluation artifacts are stored in `data/evaluation/`:
-
-- `evaluation_questions.csv` — benchmark questions, expected answers, and expected sources.
-- `rag_evaluation_results.csv` — recorded retrieval and generated-answer results.
-- `improved_evaluation_report.csv` — additional retrieval and phrase-check indicators.
-- `human_review_benchmark.csv` — human-review labels and notes.
-- `human_review_metrics.csv` — summary of the preliminary human-review metrics.
-
-The benchmark is small and reflects a limited set of policy questions. Further evaluation should include more paraphrases, ambiguous queries, unsupported questions, and independent review of answer claims and citations.
 
 ## Automated Tests
 
